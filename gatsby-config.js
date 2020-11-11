@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: "The Hippie Girl",
-    description: "This will have description for better SEO"
+    description: "This will have description for better SEO This will have description for better SEO This will have description for better SEO This will have description for better SEO This will have description for better SEO This will have description for better SEO "
 
 
   },
@@ -22,7 +22,7 @@ module.exports = {
       },
     },
      `gatsby-transformer-remark`,
-     
+   
 
 
     
