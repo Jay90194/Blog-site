@@ -7,25 +7,26 @@ import { graphql,useStaticQuery, Link } from "gatsby"
 
 export default function Blogsection() {
     const data =useStaticQuery( graphql`
-    {
-      allMarkdownRemark {
+    query {
+      allMarkdownRemark{
+        totalCount
         edges {
           node {
+            id
             frontmatter {
               title
               date
             }
-            excerpt
             fields {
               slug
             }
+            excerpt
           }
         }
       }
     }
-    `)
-    console.log(data)
-
+  `)
+  
     return (
         <>
        <ol>
@@ -45,7 +46,7 @@ export default function Blogsection() {
                 <p class="mt-4 text-gray-600">{edge.node.frontmatter.excerpt}</p>
                 
                 <div class=" mt-20 lg:mt-20">
-                <Link to={`/blog/${edge.node.fields.slug}`} class="bg-white text-gray-900 px-5 py-3 hover:text-yellow-500 font-semibold rounded ">READ MORE </Link>
+                <Link to={edge.node.fields.slug} class="bg-white text-gray-900 px-5 py-3 hover:text-yellow-500 font-semibold rounded ">READ MORE </Link>
                      <p class="float-right bg-white font-light rounded-xl  p-1">{edge.node.frontmatter.date}</p>
                 </div>
             </div>
