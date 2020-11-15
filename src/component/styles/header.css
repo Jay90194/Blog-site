@@ -39,8 +39,9 @@
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
-    padding-left: 0pxs;
+    padding-left: 15px;
     margin-right: 10px;
+
   } 
 
    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -59,7 +60,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    padding-right: 2px;
+  
   }
   .topnav.responsive a {
     float: none;
@@ -77,7 +78,8 @@
   text-align:center;
   letter-spacing: 0.1em;
   padding: 14px 16px;
-  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #logo:hover {
   background-color:white;

@@ -8,8 +8,8 @@ export default function SimpleSlider() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
@@ -45,31 +45,39 @@ export default function SimpleSlider() {
     </div>
     <Slider {...settings}>
        {/* SECTION */}
-       <div class="max-w-xs ml-2 overflow-hidden ">
-        <img class="w-48 h-56 object-cover  lg:w-full " src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80s" alt="avatar"/>
+       <div class=" max-w-xs ml-2 lg:max-w-sm   lg:ml-12 overflow-hidden ">
+       
+        <img class="w-48 h-56 object-cover rounded-xl  lg:w-full " src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80s" alt="avatar"/>
         <div class="text-center">
-            <a href="#" class="block text-base font-serif pt-4 text-gray-800 font-bold">How To Get A Perfect Makeup</a>
+            <a href="#" class="block text-base -ml-5  font-serif pt-4 text-gray-800 font-bold">How To Get A Perfect Makeup</a>
          <button class="px-2 py-3 mt-3 my-2 text-center  bg-pink-200 text-xs text-gray-900 font-bold uppercase hover:text-yellow-600 focus:bg-gray-400">READ MORE</button>
         </div>
     </div>
        {/* SECTION */}
-       <div class="max-w-xs ml-1 mr-1 overflow-hidden">
-        <img class="w-48 h-56 object-cover lg:w-full " src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80s" alt="avatar"/>
+       <div class=" max-w-sm ml-2 overflow-hidden ">
+        <img class="w-48 h-56 object-cover rounded-xl  lg:w-full " src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80s" alt="avatar"/>
         <div class="text-center">
-            <a href="#" class="block text-base font-serif pt-4 text-gray-800 font-bold">How To Get A Perfect Makeup</a>
-         <button class="px-2 py-3 mt-3 my-2 text-center  bg-pink-200 text-xs text-gray-900 font-bold uppercase hover:text-yellow-600 focus:bg-gray-400">READ MORE</button>
-        </div>
-    </div>
-       {/* SECTION */}
-       <div class="max-w-xs ml-1 mr-1 overflow-hidden">
-        <img class="w-48 h-56 object-cover lg:w-full " src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80s" alt="avatar"/>
-        <div class="text-center">
-            <a href="#" class="block text-base font-serif pt-4 text-gray-800 font-bold">How To Get A Perfect Makeup</a>
+            <a href="#" class="block text-base  font-serif pt-4 text-gray-800 font-bold">How To Get A Perfect Makeup</a>
          <button class="px-2 py-3 mt-3 my-2 text-center  bg-pink-200 text-xs text-gray-900 font-bold uppercase hover:text-yellow-600 focus:bg-gray-400">READ MORE</button>
         </div>
     </div>
       
        {/* SECTION */}
+       <div class=" max-w-sm ml-2 overflow-hidden ">
+        <img class="w-48 h-56 object-cover rounded-xl  lg:w-full " src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80s" alt="avatar"/>
+        <div class="text-center">
+            <a href="#" class="block text-base  font-serif pt-4 text-gray-800 font-bold">How To Get A Perfect Makeup</a>
+         <button class="px-2 py-3 mt-3 my-2 text-center  bg-pink-200 text-xs text-gray-900 font-bold uppercase hover:text-yellow-600 focus:bg-gray-400">READ MORE</button>
+        </div>
+    </div>
+
+    <div class=" max-w-sm ml-2 overflow-hidden ">
+        <img class="w-48 h-56 object-cover rounded-xl  lg:w-full " src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80s" alt="avatar"/>
+        <div class="text-center">
+            <a href="#" class="block text-base  font-serif pt-4 text-gray-800 font-bold">How To Get A Perfect Makeup</a>
+         <button class="px-2 py-3 mt-3 my-2 text-center  bg-pink-200 text-xs text-gray-900 font-bold uppercase hover:text-yellow-600 focus:bg-gray-400">READ MORE</button>
+        </div>
+    </div>
     </Slider>
   </div>
 );

@@ -22,14 +22,13 @@ module.exports = {
       },
     },
      `gatsby-transformer-remark`,
-   
-
-
-    
-
-
-
-
-
-],
+     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ufrsdgwfte31`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `eXvKiUHZN1e3TfuXYy01W9AGCphezXzoRDtcpDczFc0`,
+      },
+    },
+  ],
 }
