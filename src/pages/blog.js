@@ -2,12 +2,20 @@ import React from 'react'
 import Blogsection from '../component/blogsection'
 import Layout from "../component/layout"
 import { graphql,useStaticQuery} from "gatsby"
+import Banner from '../component/banner'
+
+
+
+
+
+
+
 
 
 export default function Blog() {
- const data = useStaticQuery(graphql`
+const data = useStaticQuery(graphql`
  {
-   allContentfulAllblogs {
+   allContentfulAllblogs (sort: {order: DESC, fields: date}) {
      edges {
        node {
          date(fromNow: true)
@@ -15,9 +23,6 @@ export default function Blog() {
          slug
          shortDescription
          secondbody
-         richTextBody {
-           raw
-         }
        }
      }
    }
@@ -27,18 +32,29 @@ export default function Blog() {
     return (
       <>
       <Layout>
-    <div>
-    {data.allContentfulAllblogs.edges.map((edge) =>{
-      return(
-        <Blogsection 
-          title={edge.node.title}
-          date={edge.node.date}
-          shortdescription={edge.node.shortDescription}
-          path={edge.node.slug}
-        />
+      <Banner 
+        title="All Blogs"
+      />
+      <div>
+      {data.allContentfulAllblogs.edges.map((edge) =>{
+        return(
+          <Blogsection 
+            title={edge.node.title}
+            date={edge.node.date}
+            shortdescription={edge.node.shortDescription}
+            path={edge.node.slug}
+          />
         
          )})}
         </div>
+    
+
+        
+  
+  
+  
+       
+    
         
       </Layout>
       </>

@@ -1,15 +1,13 @@
 import React from 'react'
-import Blogsection from '../component/blogsection'
 import Layout from '../component/layout'
+import Blogsection from "../component/blogsection"
 import {useStaticQuery} from "gatsby"
-import Banner from '../component/banner'
+import Banner from "../component/banner"
 
-
-export default function Fashion() {
-
-const data = useStaticQuery(graphql`
+export default function Makeup() {
+    const data = useStaticQuery(graphql`
 {
-  allContentfulAllblogs(sort: {order: DESC, fields: date}, filter: {category: {eq: "Fashion"}}) {
+  allContentfulAllblogs(sort: {order: DESC, fields: date}, filter: {category: {eq: "Makeup"}}) {
     edges {
       node {
         date(fromNow: true)
@@ -23,17 +21,16 @@ const data = useStaticQuery(graphql`
 }
 
 `)
-
-
-
+    
+    
     return (
         <>
         <Layout>
         <Banner 
-          title="FASHION"
+          title="MAKEUP"
         />
-       <div>
-       {data.allContentfulAllblogs.edges.map((edge) =>{
+         <div>
+         {data.allContentfulAllblogs.edges.map((edge) =>{
            return (
         <Blogsection 
         title={edge.node.title}
@@ -42,9 +39,8 @@ const data = useStaticQuery(graphql`
         path={edge.node.slug}
         />
         )})}
-        </div>
+         </div>
         </Layout>
-
         </>
     )
 }

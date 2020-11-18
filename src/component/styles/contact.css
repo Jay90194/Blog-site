@@ -1,0 +1,19 @@
+.Headtitle {
+
+
+font-family: Romantically Free For Personal;
+font-style: normal;
+font-weight: normal;
+
+
+/* identical to box height */
+text-align: center;
+text-transform: capitalize;
+
+/* graadient dark */
+color: linear-gradient(180deg, #0061FF 0%, #D50499 93.75%);
+}
+.forms{
+    height: 480px;
+}
+
