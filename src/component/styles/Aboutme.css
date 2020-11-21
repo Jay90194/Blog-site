@@ -1,0 +1,22 @@
+.titleabout{
+    font-family: Romantically Free For Personal;
+}
+.Lips{
+    z-index: -1;
+    transform: rotate(-17.25deg);
+}
+.bb{
+    z-index:1;
+    transform: rotate(10deg);
+}
+
+
+@media (min-width: 1024px) {
+    .bb {
+        left: 1000px;
+        top: 2350px;
+
+
+      
+    }
+}

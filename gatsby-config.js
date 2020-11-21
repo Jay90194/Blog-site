@@ -21,6 +21,8 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+     `gatsby-plugin-sharp`,
+     `gatsby-transformer-sharp`,
      `gatsby-transformer-remark`,
      {
       resolve: `gatsby-source-contentful`,

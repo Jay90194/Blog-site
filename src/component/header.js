@@ -4,7 +4,7 @@ import {Link} from "gatsby"
 
 
 export default function Header() {
- const [open,setOpen] = useState(false);
+ const [open,setOpen] = useState(true);
     return (
         <>
         <div className={ open? "topnav":"topnav responsive"} id="myTopnav">

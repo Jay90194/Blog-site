@@ -5,6 +5,7 @@ import {useStaticQuery} from "gatsby"
 import Banner from '../component/banner'
 
 
+
 export default function Fashion() {
 
 const data = useStaticQuery(graphql`
@@ -16,13 +17,19 @@ const data = useStaticQuery(graphql`
         title
         slug
         shortDescription
-        secondbody
+        topImage {
+          fluid {
+            ...GatsbyContentfulFluid
+          }
+          
+        }
       }
     }
   }
 }
 
 `)
+ console.log(data)
 
 
 
@@ -40,6 +47,7 @@ const data = useStaticQuery(graphql`
         date={edge.node.date}
         shortdescription={edge.node.shortDescription}
         path={edge.node.slug}
+        image={edge.node.topImage.fluid}
         />
         )})}
         </div>

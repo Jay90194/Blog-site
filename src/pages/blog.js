@@ -22,7 +22,6 @@ const data = useStaticQuery(graphql`
          title
          slug
          shortDescription
-         secondbody
        }
      }
    }

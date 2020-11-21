@@ -3,7 +3,7 @@ import './styles/ig.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import blob from "../image/blob1.svg"
 
 
 export default function Igsection() {
@@ -46,7 +46,8 @@ export default function Igsection() {
 
     return (
         <>
-        <div className=" w-full  p-1    ">
+        <div className="w-full overflow-hidden  p-1    ">
+          <img className="absolute blob overflow-hidden h-128 ml-24 -mt-19   lg:-mt-33 " src={blob} />
          <h2 className="text-gray-800 p-4 text-center font-medium capitalize text-xl mb-5 md:text-2xl">Recent post on Instagram</h2>
          <Slider {...settings}>
          <div className="max-w-xs p-3 h-64 w-full text-center lg:h-129 mb-24">

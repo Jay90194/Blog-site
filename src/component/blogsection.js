@@ -1,21 +1,18 @@
 import React from 'react'
 import '../css/index.css'
 import {Link} from "gatsby"
-
-
+import Img from "gatsby-image"
 
 
 export default function Blogsection(props) {
     return (
-        <>
-       <ol>
-       
-  
-             
-               <section className="bg-gray-100  lg:p-20 lg:flex lg:justify-center">
+        <> 
+        <section className=" lg:p-20 lg:flex lg:justify-center">
         <div className="bg-pink-200 m-5 lg:min-w-full  lg:-my-8 lg:mx-8 lg:flex  lg:max-w-full lg:h-200 lg:shadow-lg lg:rounded-lg">
             <div className=" lg:w-1/2">
-            <div className="h-64  bg-gray-300 bg-cover border-black border-solid border lg:rounded-lg lg:h-full"></div>
+            <div className="h-64  bg-gray-300 bg-cover border-black border-solid border lg:rounded-lg lg:h-full">
+                <Img fluid={props.image} />
+            </div>
             </div>
 
             <div className="py-6 px-6 max-w-xl lg:max-w-6xl lg:w-full">
@@ -31,14 +28,7 @@ export default function Blogsection(props) {
             </div>
         </div>
     </section>  
-               
-    
 
-      
-    </ol>
-    
-   
-    
         </>
    
     )

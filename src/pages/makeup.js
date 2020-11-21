@@ -3,6 +3,9 @@ import Layout from '../component/layout'
 import Blogsection from "../component/blogsection"
 import {useStaticQuery} from "gatsby"
 import Banner from "../component/banner"
+import pouch from "../image/pouch.png"
+
+
 
 export default function Makeup() {
     const data = useStaticQuery(graphql`
@@ -14,7 +17,6 @@ export default function Makeup() {
         title
         slug
         shortDescription
-        secondbody
       }
     }
   }
@@ -28,6 +30,7 @@ export default function Makeup() {
         <Layout>
         <Banner 
           title="MAKEUP"
+          image1={pouch}
         />
          <div>
          {data.allContentfulAllblogs.edges.map((edge) =>{
