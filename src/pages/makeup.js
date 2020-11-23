@@ -3,7 +3,6 @@ import Layout from '../component/layout'
 import Blogsection from "../component/blogsection"
 import {useStaticQuery} from "gatsby"
 import Banner from "../component/banner"
-import pouch from "../image/pouch.png"
 import Head from '../component/Head'
 
 
@@ -38,7 +37,7 @@ export default function Makeup() {
         title="MakeUp" />
         <Banner 
           title="MAKEUP"
-          image1={pouch}
+       
         />
          <div>
          {data.allContentfulAllblogs.edges.map((edge) =>{

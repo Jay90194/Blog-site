@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../component/layout'
 import marked from "marked"
-import Img from "gatsby-image"
 import Head from '../component/Head'
 
 

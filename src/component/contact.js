@@ -16,8 +16,8 @@ export default function Contact() {
       
     </div>  
     <div>
-    <img className="mx-auto w-127 mt-5 lg:w-128" src={lets} />
-        <img className="arrow1 absolute  h-64 ml-65" src={arrow} />
+    <img className="mx-auto w-127 mt-5 lg:w-128" src={lets} alt="none" />
+        <img className="arrow1 absolute  h-64 ml-65" src={arrow} alt='none'/>
     </div> 
     <div class="forms bg-pink-200 w-full mt-10 text-center max-w-xs rounded-3xl shadow-md overflow-hidden mx-auto lg:max-w-sm">
         <div class="py-4 px-6   ">
@@ -49,14 +49,7 @@ export default function Contact() {
         </div>
     </div>
    
-   
-   
-    <ul className="inline">
-        <li className='inline'>Blog post</li>
-        <li className='inline'>Blog post</li>
-        <li className='inline'>Blog post</li>
-        <li className='inline'>Blog post</li>
-    </ul>
+
         </>
 
     )
