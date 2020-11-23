@@ -3,6 +3,7 @@ import Blogsection from '../component/blogsection'
 import Layout from "../component/layout"
 import { graphql,useStaticQuery} from "gatsby"
 import Banner from '../component/banner'
+import Head from '../component/Head'
 
 
 
@@ -22,6 +23,11 @@ const data = useStaticQuery(graphql`
          title
          slug
          shortDescription
+         featureImage {
+          fluid(toFormat: WEBP) {
+            ...GatsbyContentfulFluid_withWebp
+          }
+        }
        }
      }
    }
@@ -31,6 +37,9 @@ const data = useStaticQuery(graphql`
     return (
       <>
       <Layout>
+      <Head 
+        title="All Blogs"
+      />
       <Banner 
         title="All Blogs"
       />
@@ -42,6 +51,7 @@ const data = useStaticQuery(graphql`
             date={edge.node.date}
             shortdescription={edge.node.shortDescription}
             path={edge.node.slug}
+            image={edge.node.featureImage.fluid}
           />
         
          )})}

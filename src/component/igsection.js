@@ -47,8 +47,8 @@ export default function Igsection() {
     return (
         <>
         <div className="w-full overflow-hidden  p-1    ">
-          <img className="absolute blob overflow-hidden h-128 ml-24 -mt-19   lg:-mt-33 " src={blob} />
-         <h2 className="text-gray-800 p-4 text-center font-medium capitalize text-xl mb-5 md:text-2xl">Recent post on Instagram</h2>
+          <img className="absolute blob overflow-hidden h-128 ml-10 -mt-19   lg:-mt-33 " src={blob} />
+         <h2 className="text-gray-800 p-4 text-center font-medium capitalize text-xl mb-5 lg:text-2xl">Recent post on Instagram</h2>
          <Slider {...settings}>
          <div className="max-w-xs p-3 h-64 w-full text-center lg:h-129 mb-24">
                     <img className="this lg:h-129 ml-5 w-full object-cover object-center lg:h-129 mx-auto" src="https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" alt="avatar"/>

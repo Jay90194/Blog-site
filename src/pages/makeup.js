@@ -4,6 +4,7 @@ import Blogsection from "../component/blogsection"
 import {useStaticQuery} from "gatsby"
 import Banner from "../component/banner"
 import pouch from "../image/pouch.png"
+import Head from '../component/Head'
 
 
 
@@ -17,6 +18,11 @@ export default function Makeup() {
         title
         slug
         shortDescription
+        featureImage {
+          fluid(toFormat: WEBP) {
+            ...GatsbyContentfulFluid_withWebp
+          }
+        }
       }
     }
   }
@@ -28,6 +34,8 @@ export default function Makeup() {
     return (
         <>
         <Layout>
+        <Head
+        title="MakeUp" />
         <Banner 
           title="MAKEUP"
           image1={pouch}
@@ -40,6 +48,7 @@ export default function Makeup() {
         date={edge.node.date}
         shortdescription={edge.node.shortDescription}
         path={edge.node.slug}
+        image={edge.node.featureImage.fluid}
         />
         )})}
          </div>

@@ -13,12 +13,13 @@ module.exports = {
   },
 
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        name: `image`,
+        path: `${__dirname}/src/image`,
       },
     },
      `gatsby-plugin-sharp`,
