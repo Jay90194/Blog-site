@@ -22,8 +22,13 @@ module.exports = {
         anonymize: true,
         respectDNT: true,
         pageTransitionDelay: 0,
-        defer: false,
+      },
       
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-WHLGFWL",
       },
     },
     `gatsby-plugin-react-helmet`,
