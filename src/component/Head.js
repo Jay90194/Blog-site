@@ -8,6 +8,7 @@ export default function Head({title}) {
         site{
             siteMetadata{
                 title
+                description
             }
         }
     }
@@ -16,7 +17,10 @@ export default function Head({title}) {
     return (
         <div>
             <Helmet
+            
             title={`${title} | ${data.site.siteMetadata.title}`}
+            description={data.site.siteMetadata.description}
+
              />
         </div>
     )

@@ -1,5 +1,6 @@
 .this {
-    border-radius: 0px 50px 50px 50px;  
+    border-radius: 0px 50px 50px 50px; 
+    min-height: 300px; 
 }
 
 

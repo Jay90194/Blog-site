@@ -15,9 +15,9 @@ export default function Aboutme() {
                 title
                 description
                 profilePicture {
-                fluid {
-                    ...GatsbyContentfulFluid_withWebp
-                }
+                    fluid(toFormat: WEBP) {
+                        ...GatsbyContentfulFluid_withWebp
+                      }
                 }
             }
             }

@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: "The Hippie Girl",
-    description: "This will have description for better SEO This will have description for better SEO This will have description for better SEO This will have description for better SEO This will have description for better SEO This will have description for better SEO "
+    description: "The niche of my blog is Fashion,Beauty, and Lifestyle, colour, combinations to hairstyles and makeup.Beautyblogger, Beautyblog, Beautiful, Beautyguru, Beautyqueen, Beautycare, Beautyaddict, Beautytips, Beautyandthebeast, Beautyproducts, BeautySalon, Beautybloggers, Beautyjunkie, Beautygram, Beautyofnature, Beautylover, Beautygirl, Beautymakeup, Beautyphotography, Beautylaunchpad, Beautyvlogger, Beautycommunity, Beautyfull, Beautyblender, Beautyproduct, Beautys, Beautyshoot, Beautyskin, Beautybox, Beautyhair Makeup, Blog, Beauty, Earned, Beautiful, Link, Latest, Saturday, Favorite, Festival, Face, Fave, Post, Hair, Palette, Enter, Natural, Follow, Review, Skin, Video, Sping, Winning, Rounded, Set, Guys, Matte, Head, Free, Product, Products, YouTube, Chanel, Worth beauty blogger acne, beauty vlogger Zoella, beauty vlogger with acne, beauty vlogger setup, beauty vlogger room tour, beauty vlogger oily skin,beauty vlogger natural, beauty vlogger music, beauty vlogger equipment, "
 
 
   },

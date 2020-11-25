@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../component/layout'
 import marked from "marked"
 import Head from '../component/Head'
-
+import "./Allblog.css"
 
 
 export const query = graphql`
@@ -27,8 +27,8 @@ const posts = marked(post)
        <Head 
          title={data.contentfulAllblogs.title}
        />
-           <h1 className="text-4xl mt-10  font-serif text-center font-bold lg:mt-24 lg:text-6xl">{data.contentfulAllblogs.title} </h1>
-           <section className="mx-6 mt-10 text-sm  font-sans leading-7 lg:mx-24" dangerouslySetInnerHTML={{__html :posts}} />
+           <h1 className="title mt-10 font-mono text-center font-bold lg:mt-24 ">{data.contentfulAllblogs.title} </h1>
+           <div className=" mx-6 mt-10 text-sm font-sans leading-7 lg:text-xl lg:mx-127" dangerouslySetInnerHTML={{__html :posts}} />
        </Layout>
        </>
     )
