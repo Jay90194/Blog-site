@@ -1,9 +1,14 @@
-.titleabout{
-    font-family: Romantically Free For Personal;
+@font-face {
+    font-family:'Romantically Free For Personal';
+    src: url("Romantically.otf");
+
+
 }
+
 .Lips{
     z-index: -1;
     transform: rotate(-17.25deg);
+
 }
 .bb{
     z-index:1;
@@ -15,8 +20,13 @@
     .bb {
         left: 1000px;
         top: 2350px;
-
-
-      
     }
+}
+
+.profileimg{
+    z-index: 2;
+
+}
+.titleabout{
+    font-family: Romantically Free For Personal;
 }

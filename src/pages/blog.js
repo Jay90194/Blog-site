@@ -56,15 +56,6 @@ const data = useStaticQuery(graphql`
         
          )})}
         </div>
-    
-
-        
-  
-  
-  
-       
-    
-        
       </Layout>
       </>
     )

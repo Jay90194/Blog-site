@@ -1,6 +1,8 @@
 .leaf1{
     z-index: -0.5;
+    transform: rotate(10deg);
 }
 .leaf2 {
     x-index: -0.5;
+    transform: rotate(-10deg);
 }

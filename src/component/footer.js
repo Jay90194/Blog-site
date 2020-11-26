@@ -11,7 +11,7 @@ export default function Footer() {
         
     <footer className=" mt-10 flex justify-center  text-black bg-pink-200">
       
-        <div className="w-full h-129 py-6">
+        <div className="w-full overflow-hidden h-128 py-6">
         
             <h1 className="text-center text-lg font-sans font-semibold lg:text-2xl">
                 Join 5, 000+ other and never miss <br /> out on new tips, tutorials, and more.
@@ -32,16 +32,15 @@ export default function Footer() {
 
                 <div className=" flex mt-4 mb-4 md:m-0 lg:m-auto">
                     <div className="grid grid-cols-1 text-center p-4 mx-4 mb-4">
-                        <Link to="/" className="px-4 pt-4  text-sm text-black font-medium hover:text-yellow-600">HOME</Link>
-                        <Link to="/fashion" className="px-4 pt-4 text-sm text-black font-medium hover:text-yellow-600">FASHION</Link>
-                        <Link to="/review" className="px-4 pt-4 text-sm text-black font-medium hover:text-yellow-600">PRODUCT REVIEW</Link>
-                        <Link to="/blog" className="px-4 pt-4  text-sm text-black font-medium hover:text-yellow-600">ALL BLOGS</Link>
-                        <Link to="/contact" className="px-4 pt-4 text-sm text-black font-medium hover:text-yellow-600">CONTACTS</Link>
+                        <Link to="/" className="p-5   text-sm text-black font-medium hover:text-yellow-600">HOME</Link>
+                        <Link to="/fashion" className="p-5  text-sm text-black font-medium hover:text-yellow-600">FASHION</Link>
+                        <Link to="/blog" className=" p-5 text-sm text-black font-medium hover:text-yellow-600">ALL BLOGS</Link>
+                        <Link to="/contact" className="p-5  text-sm text-black font-medium hover:text-yellow-600">CONTACTS</Link>
                     </div>
                 </div>
             </div>
             <img className="leaf1 -ml-10 -mt-33 w-48 h-40 lg:w-200 lg:h-200 lg:-mt-57 lg:rotate-0 lg:-ml-20" src={footerleaf} alt="none" />
-            <img className="leaf2 float-right -mt-40 mt-30 w-48 h-40 lg:w-127 lg:-mt-57  lg:h-127" src={footerleaf2} alt="none" />        
+            <img className="leaf2 float-right -mt-33 mt-30 w-48 h-40 lg:w-127 lg:-mt-57  lg:h-127" src={footerleaf2} alt="none" />        
         </div>
     </footer>
         </>

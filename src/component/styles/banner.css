@@ -1,16 +1,8 @@
+@font-face {
+    font-family: 'Romantically Free For Personal';
+    src: url('Romantically.otf');
+}
+
 .titlehead{
 font-family:Romantically Free For Personal;
 }
-/* .img1 {
-    transform: rotate(-90.00deg);
- 
-} */
-
-/* @media (max-width:629px) {
-   #optional1{
-    display: none;
-   }
-   #optional2{
-       display: none;
-   }
- }  */

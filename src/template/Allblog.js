@@ -28,7 +28,7 @@ const posts = marked(post)
          title={data.contentfulAllblogs.title}
        />
            <h1 className="title mt-10 font-mono text-center font-bold lg:mt-24 ">{data.contentfulAllblogs.title} </h1>
-           <div className=" mx-6 mt-10 text-sm font-sans leading-7 lg:text-xl lg:mx-127" dangerouslySetInnerHTML={{__html :posts}} />
+           <div className="This mx-6 mt-10 text-sm font-sans leading-7 lg:text-xl lg:mx-127" dangerouslySetInnerHTML={{__html :posts}} />
        </Layout>
        </>
     )

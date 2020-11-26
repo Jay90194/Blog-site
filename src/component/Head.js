@@ -9,6 +9,7 @@ export default function Head({title}) {
             siteMetadata{
                 title
                 description
+                keywords
             }
         }
     }
@@ -20,8 +21,11 @@ export default function Head({title}) {
             
             title={`${title} | ${data.site.siteMetadata.title}`}
             description={data.site.siteMetadata.description}
+            keywords={data.site.siteMetadata.keywords}
 
-             />
+             >
+             <html lang="en" />
+             </Helmet>
         </div>
     )
 }

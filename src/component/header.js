@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import './styles/header.css'
 import {Link} from "gatsby"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faAlignJustify } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
  const [open,setOpen] = useState(true);
@@ -15,7 +16,7 @@ export default function Header() {
         <Link to="/blog" > All Blog</Link>
         <Link to="/contact" >Contact</Link>
         <Link to="#" className="icon hover:bg-white ">
-        <i className="fa fa-bars  "onClick={() => setOpen(!open)}></i>
+        <i><FontAwesomeIcon icon={faAlignJustify} onClick={() => setOpen(!open)} /></i>
         </Link>
         </div>
         </>
