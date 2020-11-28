@@ -3,7 +3,7 @@ import Blogsection from '../component/blogsection'
 import Layout from "../component/layout"
 import { graphql,useStaticQuery} from "gatsby"
 import Banner from '../component/banner'
-import Head from '../component/Head'
+import SEO from '../component/SEO'
 
 
 
@@ -37,7 +37,7 @@ const data = useStaticQuery(graphql`
     return (
       <>
       <Layout>
-      <Head 
+      <SEO 
         title="All Blogs"
       />
       <Banner 

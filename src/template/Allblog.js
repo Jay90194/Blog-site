@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../component/layout'
 import marked from "marked"
-import Head from '../component/Head'
+import SEO from '../component/SEO'
 import "./Allblog.css"
-
+import {graphql} from 'gatsby'
 
 export const query = graphql`
 query MyQuery($slug: String) {
@@ -12,6 +12,7 @@ query MyQuery($slug: String) {
     body {
       body
     } 
+    keywords
   }
 }
 `
@@ -24,8 +25,10 @@ const posts = marked(post)
     return (
        <>
        <Layout>
-       <Head 
+       <SEO 
          title={data.contentfulAllblogs.title}
+         description={data.contentfulAllblogs.body.body}
+         keywords={data.contentfulAllblogs.keywords}
        />
            <h1 className="title mt-10 font-mono text-center font-bold lg:mt-24 ">{data.contentfulAllblogs.title} </h1>
            <div className="This mx-6 mt-10 text-sm font-sans leading-7 lg:text-xl lg:mx-127" dangerouslySetInnerHTML={{__html :posts}} />

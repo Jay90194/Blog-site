@@ -5,10 +5,8 @@ import "./styles/banner.css"
 export default function Banner(props) {
     return (
         <div className="w-full overflow-hidden h-40">
-    
-        <div className="h-full w-129 mx-auto">
             <h3 className="titlehead text-xl text-center pt-12 mt-4 lg:text-4xl">{props.title} </h3>
-            </div>
-        </div> 
+        </div>
+
     )
 }

@@ -6,7 +6,7 @@ import Layout from "../component/layout"
 import "./global.css"
 import {graphql,useStaticQuery} from "gatsby"
 import Blogpiece from "../component/blogpiece"
-import Head from "../component/Head"
+import SEO from "../component/SEO"
 
 
 
@@ -47,8 +47,10 @@ export default function Home(props) {
   return (
     <>
     <Layout>
-    <Head
-    title="Home" />
+    <SEO
+
+    title="Home"
+     />
       <div>
     {data.allContentfulFrontPageHero.edges.map((edge)=>{
       return(

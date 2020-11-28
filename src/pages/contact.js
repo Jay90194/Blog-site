@@ -1,6 +1,6 @@
 import React from 'react'
 import Contact from '../component/contact'
-import Head from '../component/Head'
+import SEO from '../component/SEO'
 import Layout from '../component/layout'
 
 
@@ -8,7 +8,7 @@ export default function contact() {
     return (
         <>
         <Layout>
-        <Head 
+        <SEO
             title="Contact"
         />
             <Contact />

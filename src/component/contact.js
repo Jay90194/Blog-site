@@ -25,18 +25,18 @@ export default function Contact() {
 
             <p class="mt-1 text-center text-gray-700">Feel Free To Contact us</p>
 
-            <form>
+            <form name="contact" method="POST" data-netlify="true"  netlify-honeypot="bot-field" >
                 
             <div class="mt-4 w-full">
-                    <input class="w-full mt-2 py-2 px-4 bg-white text-gray-700 border border-gray-300 rounded block placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline" type="text" placeholder="Your Name"/>
+                    <input class="w-full mt-2 py-2 px-4 bg-white text-gray-700 border border-gray-300 rounded block placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline" name="name" type="text" placeholder="Your Name"/>
                 </div>
 
                 <div class="mt-4 w-full">
-                    <input class="w-full mt-2 py-2 px-4 bg-white text-gray-700 border border-gray-300 rounded block placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline" type="email" placeholder="Email Address" aria-label="Email Address"/>
+                    <input class="w-full mt-2 py-2 px-4 bg-white text-gray-700 border border-gray-300 rounded block placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline" name="email" type="email" placeholder="Email Address" aria-label="Email Address"/>
                 </div>
 
                 <div class="mt-4 w-full ">
-                    <input class="w-full mt-2 h-20 py-2 px-4 bg-white text-gray-700 border border-gray-300 rounded block placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline" type="text" placeholder="Your Message" />
+                    <input class="w-full mt-2 h-20 py-2 px-4 bg-white text-gray-700 border border-gray-300 rounded block placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline" name="message" type="text" placeholder="Your Message" />
                 </div>
                 
                 <div class="flex justify-between items-center mt-4">

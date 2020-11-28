@@ -11,10 +11,10 @@ export default function Footer() {
         
     <footer className=" mt-10 flex justify-center  text-black bg-pink-200">
       
-        <div className="w-full overflow-hidden h-128 py-6">
-        
+        <div className="w-full overflow-hidden h-auto py-6">
+{/*         
             <h1 className="text-center text-lg font-sans font-semibold lg:text-2xl">
-                Join 5, 000+ other and never miss <br /> out on new tips, tutorials, and more.
+                Join 5,000+ other and never miss <br /> out on new tips, tutorials, and more.
             </h1>
 
             <div className="flex justify-center mt-6">
@@ -24,13 +24,13 @@ export default function Footer() {
                         <button className="w-full m-1 p-2 text-sm bg-white rounded font-semibold uppercase lg:w-auto hover:text-yellow-600">subscribe</button>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* <hr className="h-px mt-6 mb-6  text-center bg-gray-700 border-none"/> */}
 
-            <div className="flex flex-col items-center justify-between mt-3 mb-3 md:flex-row">
+            <div className="flex flex-col items-center justify-between  mb-3 md:flex-row">
 
-                <div className=" flex mt-4 mb-4 md:m-0 lg:m-auto">
+                <div className=" flex  mb-4 md:m-0 lg:m-auto">
                     <div className="grid grid-cols-1 text-center p-4 mx-4 mb-4">
                         <Link to="/" className="p-5   text-sm text-black font-medium hover:text-yellow-600">HOME</Link>
                         <Link to="/fashion" className="p-5  text-sm text-black font-medium hover:text-yellow-600">FASHION</Link>

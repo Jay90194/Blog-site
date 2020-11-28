@@ -10,7 +10,7 @@ export default function Blogsection(props) {
         <section className=" lg:p-20 lg:flex lg:justify-center">
         <div className="bg-pink-200 m-5 lg:min-w-full rounded-t-lg  lg:-my-8 lg:mx-8 lg:flex  lg:max-w-full lg:h-200 lg:shadow-lg lg:rounded-lg">
             <div className=" lg:w-1/2">
-            <div className="h-64  rounded-lg bg-cover border-black border-solid border lg:rounded-lg lg:h-full" >
+            <div className=" h-65  rounded-lg bg-cover border-black border-solid border lg:rounded-lg lg:h-full" >
                 <Img className="w-full h-full rounded-lg" fluid={props.image} />
             </div>
             </div>

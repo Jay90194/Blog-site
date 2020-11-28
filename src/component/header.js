@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <>
         <div className={ open? "topnav":"topnav responsive"} id="myTopnav">
-        <Link to="/" className="max-w-xs " id="logo">Hippie Girl</Link>
+        <Link to="/" className="max-w-xs" id="logo">Hippie Girl</Link>
         <Link to="/">Home</Link>
         <Link to="/fashion" >Fashion</Link>
         <Link to="/makeup" >MAKEUP</Link>

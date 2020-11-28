@@ -1,12 +1,12 @@
 import React from 'react'
 import Layout from "../component/layout"
 import {Link} from "gatsby"
-import Head from '../component/Head'
+import SEO from '../component/SEO'
 export default function Error() {
     return (
        <>
      <Layout>
-     <Head 
+     <SEO 
          title="404 Not Found"
      />
      <div className="h-64 mt-20">

@@ -7,9 +7,8 @@
 module.exports = {
   siteMetadata: {
     title: "The Hippie Girl",
-    description: "The niche of my blog is Fashion,Beauty and Lifestyle.Im gonna start from the smallest group and make sure i cover everything possible from colour combinations to hairstyles and makeup.",
+    description: "The niche of my blog is Fashion,Beauty and Lifestyle.Im gonna start from the smallest group and make sure i cover everything possible from colour combinations to hairstyles and makeup.Fashion,Beauty, and Lifestyle, colour, combinations to hairstyles and makeup,Beautyblogger, Beautyblog, Beautiful, Beautyguru, Beautyqueen, Beautycare, Beautyaddict, Beautytips, Beautyandthebeast, Beautyproducts, BeautySalon, Beautybloggers, Beautylover, Beautygirl, Beautymakeup, Beautyphotography,  Beautyvlogger, Beautycommunity, Beautyfull,  Beautyproduct, Beauty, Beautyshoot, Beautyskin, Beautyhair Makeup, Blog, Beauty,  Beautiful, Link, Latest, Favorite, Festival, Face, Post, Hair, Natural,  Review, Skin, Video, Sping, Winning, Rounded, Set, Guys, Matte, Head, Free, Product, Products, YouTube, Chanel, Worth beauty blogger acne, beauty vlogger , beauty with acne,oily skin,beauty,natural beauty",
     siteUrl: `https://www.hippiegirl.in`,
-    keywords: 'Fashion,Beauty, and Lifestyle, colour, combinations to hairstyles and makeup,Beautyblogger, Beautyblog, Beautiful, Beautyguru, Beautyqueen, Beautycare, Beautyaddict, Beautytips, Beautyandthebeast, Beautyproducts, BeautySalon, Beautybloggers, Beautylover, Beautygirl, Beautymakeup, Beautyphotography,  Beautyvlogger, Beautycommunity, Beautyfull,  Beautyproduct, Beauty, Beautyshoot, Beautyskin, Beautyhair Makeup, Blog, Beauty,  Beautiful, Link, Latest, Favorite, Festival, Face, Post, Hair, Natural,  Review, Skin, Video, Sping, Winning, Rounded, Set, Guys, Matte, Head, Free, Product, Products, YouTube, Chanel, Worth beauty blogger acne, beauty vlogger , beauty vlogger with acne, beauty vlogger setup, beauty vlogger room tour, beauty vlogger oily skin,beauty vlogger natural, beauty vlogger music, beauty vlogger equipment,'
   },
 
   plugins: [

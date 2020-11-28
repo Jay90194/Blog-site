@@ -3,7 +3,7 @@ import Layout from '../component/layout'
 import Blogsection from "../component/blogsection"
 import {useStaticQuery} from "gatsby"
 import Banner from "../component/banner"
-import Head from '../component/Head'
+import SEO from '../component/SEO'
 
 
 
@@ -33,7 +33,7 @@ export default function Makeup() {
     return (
         <>
         <Layout>
-        <Head
+        <SEO
         title="MakeUp" />
         <Banner 
           title="MAKEUP"
