@@ -34,6 +34,8 @@ export default function Footer() {
                     <div className="grid grid-cols-1 text-center p-4 mx-4 mb-4">
                         <Link to="/" className="p-5   text-sm text-black font-medium hover:text-yellow-600">HOME</Link>
                         <Link to="/fashion" className="p-5  text-sm text-black font-medium hover:text-yellow-600">FASHION</Link>
+                        <Link to="/lifestyle" className="p-5  text-sm text-black font-medium hover:text-yellow-600">LIFESTYLE</Link>
+                        <Link to="/DIY" className="p-5  text-sm text-black font-medium hover:text-yellow-600">D.I.Y</Link>
                         <Link to="/blog" className=" p-5 text-sm text-black font-medium hover:text-yellow-600">ALL BLOGS</Link>
                         <Link to="/contact" className="p-5  text-sm text-black font-medium hover:text-yellow-600">CONTACTS</Link>
                     </div>

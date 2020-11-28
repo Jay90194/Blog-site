@@ -41,7 +41,7 @@ export default function Contact() {
                 
                 <div class="flex justify-between items-center mt-4">
 
-                    <button class="py-2 px-4 bg-gray-700 mx-auto text-white rounded hover:bg-gray-600 focus:outline-none" type="button">
+                    <button class="py-2 px-4 bg-gray-700 mx-auto text-white rounded hover:bg-gray-600 focus:outline-none" type="submit">
                         SUBMIT
                     </button>
                 </div>

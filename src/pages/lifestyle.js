@@ -1,14 +1,15 @@
 import React from 'react'
-import SEO from '../component/SEO'
-import Layout from '../component/layout'
-import {useStaticQuery} from 'gatsby'
-import Blogsection from '../component/blogsection'
 import Banner from '../component/banner'
+import Blogsection from '../component/blogsection'
+import Layout from '../component/layout'
+import SEO from '../component/SEO'
+import {useStaticQuery} from 'gatsby'
 
-export default function Diy() {
+
+export default function Lifestyle() {
     const data = useStaticQuery(graphql`
     {
-      allContentfulAllblogs(sort: {order: DESC, fields: date}, filter: {category: {eq: "DIY"}}) {
+      allContentfulAllblogs(sort: {order: DESC, fields: date}, filter: {category: {eq: "Lifestyle"}}) {
         edges {
           node {
             date(fromNow: true)
@@ -26,18 +27,21 @@ export default function Diy() {
     }
     
     `)
+    
+   
     return (
-       <Layout>
-           <SEO
-           title='DIY'/>
-           <Banner 
-               title='Do It Yourself'
-           />
-
-             <div>
+        <>
+        <Layout>
+          <SEO 
+              title='Lifestyle'
+          />
+          <Banner 
+          title="Lifestyle"
+        />
+        <div>
        {data.allContentfulAllblogs.edges.map((edge) =>{
            return (
-        <Blogsection
+        <Blogsection 
         title={edge.node.title}
         date={edge.node.date}
         shortdescription={edge.node.shortDescription}
@@ -46,6 +50,7 @@ export default function Diy() {
         />
         )})}
         </div>
-       </Layout>
+        </Layout>
+        </>
     )
 }

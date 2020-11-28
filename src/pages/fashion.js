@@ -29,7 +29,7 @@ const data = useStaticQuery(graphql`
 }
 
 `)
- console.log(data)
+
 
 
 

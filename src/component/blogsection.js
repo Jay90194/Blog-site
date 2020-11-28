@@ -22,7 +22,7 @@ export default function Blogsection(props) {
                 <p className="mt-4 text-gray-600">{props.shortdescription}</p>
                 
                 <div className="mt-20 lg:mt-32">
-                <Link to={`/blog/${props.path}`} className="bg-white text-gray-900 px-5 py-3 hover:text-yellow-500 font-semibold rounded ">READ MORE </Link>
+                <Link to={`/blog/${props.path}`} className="bg-white text-gray-900 px-5 py-3 hover:text-yellow-500 font-semibold rounded ">READ</Link>
                      <p className="float-right  bg-white font-normal text-xs rounded-xl p-1 lg:ml-20">{props.date}</p>
                 </div>
             </div>

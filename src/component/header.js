@@ -13,6 +13,8 @@ export default function Header() {
         <Link to="/">Home</Link>
         <Link to="/fashion" >Fashion</Link>
         <Link to="/makeup" >MAKEUP</Link>
+        <Link to="/lifestyle" >LIFESTYLE</Link>
+        <Link to="/DIY" >D.I.Y</Link>
         <Link to="/blog" > All Blog</Link>
         <Link to="/contact" >Contact</Link>
         <Link to="#" className="icon hover:bg-white ">
