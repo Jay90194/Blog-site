@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: "The Hippie Girl",
-    description: "The niche of my blog is Fashion,Beauty and Lifestyle.Im gonna start from the smallest group and make sure i cover everything possible from colour combinations to hairstyles and makeup.Fashion,Beauty, and Lifestyle, colour, combinations to hairstyles and makeup,Beautyblogger, Beautyblog, Beautiful, Beautyguru, Beautyqueen, Beautycare, Beautyaddict, Beautytips, Beautyandthebeast, Beautyproducts, BeautySalon, Beautybloggers, Beautylover, Beautygirl, Beautymakeup, Beautyphotography,  Beautyvlogger, Beautycommunity, Beautyfull,  Beautyproduct, Beauty, Beautyshoot, Beautyskin, Beautyhair Makeup, Blog, Beauty,  Beautiful, Link, Latest, Favorite, Festival, Face, Post, Hair, Natural,  Review, Skin, Video, Sping, Winning, Rounded, Set, Guys, Matte, Head, Free, Product, Products, YouTube, Chanel, Worth beauty blogger acne, beauty vlogger , beauty with acne,oily skin,beauty,natural beauty",
+    description: "The niche of my blog is Fashion,Beauty and Lifestyle.Im gonna start from the smallest group and make sure i cover everything possible from colour combinations to hairstyles and makeup.Fashion,Beauty, and Lifestyle, colour, combinations to hairstyles and makeup,Beautyblogger, Beautyblog, Beautiful, Beautyguru, Beautyqueen, Beautycare,Beautytips, Beautyandthebeast, Beautyproducts, BeautySalon,",
     siteUrl: `https://www.hippiegirl.in`,
   },
 
@@ -22,6 +22,12 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.hippiegirl.in`,
+      },
+    },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
