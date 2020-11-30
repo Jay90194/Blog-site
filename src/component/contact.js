@@ -25,9 +25,10 @@ export default function Contact() {
 
             <p className="mt-1 text-center text-gray-700">Feel Free To Contact us</p>
 
-            <form name="contact" method="POST" data-netlify="true"  netlify-honeypot="bot-field" >
-                
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success" name="contact-form" >
+            <input type="hidden" name="bot-field" />
             <div className="mt-4 w-full">
+        
                     <input className="w-full mt-2 py-2 px-4 bg-white text-gray-700 border border-gray-300 rounded block placeholder-gray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline" name="name" type="text" placeholder="Your Name"/>
                 </div>
 
