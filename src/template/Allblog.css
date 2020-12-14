@@ -34,3 +34,16 @@
     font-size: 1.5rem;
 
 }
+.This h1 {
+    font: initial;
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+@media (max-width:629px) {
+    .This h1{
+     font-size:3rem;
+    
+    }
+    }
