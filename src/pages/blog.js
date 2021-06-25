@@ -24,6 +24,7 @@ const data = useStaticQuery(graphql`
          slug
          shortDescription
          featureImage {
+          
           fluid(toFormat: WEBP) {
             ...GatsbyContentfulFluid_withWebp
           }
